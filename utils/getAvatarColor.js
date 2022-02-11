@@ -1,4 +1,4 @@
-export default function getAvatarColor(name: string): string {
+export default function getAvatarColor(name) {
   const hexCode = name
     .split("")
     .reduce((acc, char) => (acc * char.charCodeAt(0)) % 0xffffff, 1)
